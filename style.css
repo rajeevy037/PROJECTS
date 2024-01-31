@@ -1,64 +1,82 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-body{
-    background-color: #548687;
-    text-align: center;
-    /* display: flex;
-    justify-content: center; */
-}
-.container{
-    height: 70vh;
-    /* width: 350px; */
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#010758,#490d61);
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
 }
-.game{
-    height: 60vmin;
-    width: 60vmin;
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.hero h1 span{
+    color: #ff2963;
+}
+textarea{
+    height: 250px;
+    width: 600px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0px;
+    outline: 0;
+    padding: 20px;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
+    gap: 20px;
+}
+button{
+    background-color: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0px 20px;
+    border: 0px;
+    outline: 0;
+    appearance: none;
+    border-radius: 35px;
+    background-image: url(dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
 }
 
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
-    color: #b0413e;
-    font-size: 35px;
-    background-color: #ffffc7;
-    /* border-right: 2px solid black;
-    border-bottom: 2px solid black; */
-}
-#reset{
-    height: 30px;
-    width: 100px;
-    color:#b0413e;
-    border: none;
-    border-radius: 1rem;
-}
-.new{
-    height: 30px;
-    width: 100px;
-    color:#b0413e;
-    border: none;
-    border-radius: 1rem;
-}
-#msg{
-    color: #ffffc7;
-    font-size: 40px;
-}
-.msg-container{
-    height: 20vmin;
-}
-.hide{
-    display: none;
-}
+

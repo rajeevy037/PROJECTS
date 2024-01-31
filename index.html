@@ -3,31 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Text To Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="msg-container hide">
-        <p id="msg">WINNER</p>
-        <button class="new">New Game</button>
-    </div>
-    <main>
-        <h1>Tic Tac Toe</h1>
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
+    <div class="hero">
+        <h1  id="h1">Text To Speech <span id="span">Converter</span></h1>
+        <textarea placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select></select>
+            <button><img src="play.png">Listen</button>
         </div>
-    </main>
-    <button id="reset">Reset Game</button>
-    <script src="script.js"></script>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
